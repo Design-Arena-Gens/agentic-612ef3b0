@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crumbl $100 Gift Card Survey | Exclusive Offer</title>
+    <meta
+      name="description"
+      content="$100 Crumbl gift card for completing a survey and special partner offers. Spots are limited—claim yours today."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --pink-100: #ffe6ef;
+        --pink-200: #ffd1df;
+        --pink-300: #ffb7ce;
+        --pink-400: #ff9dbc;
+        --pink-brand: #ffc0cb;
+        --pink-deep: #ff7a9e;
+        --gray-900: #1b1b1d;
+        --gray-600: #555;
+        --gray-100: #fafafa;
+        --white: #fff;
+        --black: #000;
+        --radius-lg: 24px;
+        --radius-md: 16px;
+        --radius-sm: 12px;
+        --shadow-soft: 0 24px 48px rgba(255, 122, 158, 0.15);
+        --shadow-card: 0 16px 40px rgba(27, 27, 29, 0.08);
+        --max-width: 960px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: var(--pink-100);
+        color: var(--gray-900);
+        line-height: 1.6;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        backdrop-filter: blur(12px);
+        background: rgba(255, 240, 244, 0.8);
+        border-bottom: 1px solid rgba(255, 123, 157, 0.15);
+      }
+
+      .nav {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+      }
+
+      .logo {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 1.25rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--gray-900);
+      }
+
+      .hero {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 72px 24px 64px;
+        display: grid;
+        gap: 40px;
+      }
+
+      .hero-card {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 40px 32px;
+        box-shadow: var(--shadow-soft);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-card::before {
+        content: "";
+        position: absolute;
+        width: 380px;
+        height: 380px;
+        background: radial-gradient(
+          circle at 20% 20%,
+          rgba(255, 186, 210, 0.45) 0%,
+          rgba(255, 192, 203, 0) 70%
+        );
+        top: -120px;
+        right: -110px;
+        z-index: 0;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 123, 158, 0.1);
+        color: var(--pink-deep);
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.78rem;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(2.4rem, 5vw, 3.6rem);
+        line-height: 1.12;
+        margin: 0 0 20px;
+        z-index: 1;
+        position: relative;
+      }
+
+      .hero p {
+        font-size: 1.05rem;
+        margin: 0 0 24px;
+        max-width: 560px;
+        z-index: 1;
+        position: relative;
+      }
+
+      .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        z-index: 1;
+        position: relative;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 16px 26px;
+        border-radius: 12px;
+        background: var(--pink-deep);
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1.05rem;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 16px 32px rgba(255, 122, 158, 0.3);
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 24px 40px rgba(255, 122, 158, 0.4);
+      }
+
+      .cta-subtext {
+        font-size: 0.95rem;
+        color: var(--gray-600);
+      }
+
+      .trust-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 16px;
+        z-index: 1;
+        position: relative;
+      }
+
+      .trust-badge {
+        background: rgba(255, 123, 158, 0.1);
+        color: var(--pink-deep);
+        padding: 10px 14px;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+
+      .card-highlight {
+        background: var(--pink-200);
+        border-radius: var(--radius-lg);
+        padding: 24px 22px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .card-highlight strong {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+      }
+
+      section {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 64px 24px;
+      }
+
+      .section-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        margin: 0 0 12px;
+        text-align: center;
+      }
+
+      .section-lede {
+        text-align: center;
+        max-width: 620px;
+        margin: 0 auto 40px;
+        color: var(--gray-600);
+      }
+
+      .step-grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      .step-card {
+        background: var(--white);
+        border-radius: var(--radius-md);
+        padding: 24px 22px;
+        box-shadow: var(--shadow-card);
+        position: relative;
+      }
+
+      .step-number {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: var(--pink-brand);
+        color: var(--gray-900);
+        font-weight: 700;
+        display: grid;
+        place-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.05rem;
+        margin-bottom: 16px;
+      }
+
+      .step-card h3 {
+        margin: 0 0 12px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3rem;
+      }
+
+      .step-card p {
+        margin: 0;
+        color: var(--gray-600);
+      }
+
+      .benefit-list {
+        display: grid;
+        gap: 18px;
+        margin-top: 32px;
+      }
+
+      .benefit-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .benefit-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: rgba(255, 123, 158, 0.14);
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+      }
+
+      .qualify-card {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 32px 26px;
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        gap: 28px;
+      }
+
+      .qualify-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 14px;
+      }
+
+      .qualify-card li {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+
+      .qualify-card li span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(57, 181, 74, 0.15);
+        color: #39b54a;
+        font-weight: 700;
+        font-size: 0.85rem;
+        padding: 8px 14px;
+        border-radius: 999px;
+        flex-shrink: 0;
+      }
+
+      .form-card {
+        background: var(--white);
+        padding: 32px 26px;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        gap: 18px;
+      }
+
+      .form-card h3 {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.7rem;
+      }
+
+      form {
+        display: grid;
+        gap: 16px;
+      }
+
+      label {
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 14px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        font-size: 1rem;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+        border-color: var(--pink-deep);
+        box-shadow: 0 0 0 3px rgba(255, 122, 158, 0.25);
+      }
+
+      .consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.85rem;
+        color: var(--gray-600);
+      }
+
+      .consent input {
+        width: auto;
+        margin-top: 3px;
+      }
+
+      .form-button {
+        border: none;
+        background: var(--gray-900);
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 16px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .form-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 32px rgba(27, 27, 29, 0.22);
+      }
+
+      .form-note {
+        font-size: 0.78rem;
+        color: var(--gray-600);
+      }
+
+      .form-success {
+        display: none;
+        padding: 14px;
+        border-radius: 12px;
+        background: rgba(57, 181, 74, 0.15);
+        color: #267834;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .social-proof {
+        display: grid;
+        gap: 20px;
+      }
+
+      .testimonial {
+        background: var(--white);
+        border-radius: var(--radius-md);
+        padding: 24px;
+        box-shadow: var(--shadow-card);
+        display: grid;
+        gap: 12px;
+      }
+
+      .testimonial h4 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 10px;
+        background: rgba(255, 123, 158, 0.15);
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--pink-deep);
+      }
+
+      .faq {
+        display: grid;
+        gap: 16px;
+      }
+
+      .faq-item {
+        background: var(--white);
+        padding: 22px;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-card);
+      }
+
+      .faq-item h4 {
+        margin: 0 0 10px;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      footer {
+        background: var(--gray-900);
+        color: rgba(255, 255, 255, 0.75);
+        padding: 40px 24px 60px;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+      }
+
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: color 0.2s ease;
+      }
+
+      .footer-links a:hover {
+        color: var(--white);
+      }
+
+      .floating-cta {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--pink-deep);
+        color: var(--white);
+        padding: 14px 24px;
+        border-radius: 999px;
+        box-shadow: 0 12px 24px rgba(255, 122, 158, 0.45);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      .floating-cta.hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, 20px);
+      }
+
+      .floating-cta span {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+      }
+
+      .progress-bar {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 999px;
+        height: 12px;
+        overflow: hidden;
+      }
+
+      .progress-fill {
+        height: 100%;
+        width: 74%;
+        background: linear-gradient(90deg, #ff7a9e 0%, #ffb7ce 100%);
+        border-radius: 999px;
+      }
+
+      .countdown {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        font-weight: 600;
+        color: var(--gray-900);
+      }
+
+      .countdown span {
+        background: rgba(255, 123, 158, 0.15);
+        padding: 6px 12px;
+        border-radius: 10px;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      @media (min-width: 720px) {
+        .hero {
+          grid-template-columns: 1.35fr 1fr;
+          align-items: center;
+          gap: 32px;
+        }
+
+        .hero-card {
+          min-height: 100%;
+        }
+
+        .step-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .social-proof {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .benefit-list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .hero {
+          padding-top: 48px;
+        }
+
+        .hero-card {
+          padding: 32px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo">Crumbl</div>
+        <div class="countdown">
+          Offer ends in <span id="timer">14:59</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <span class="eyebrow">Limited Spots · TikTok Exclusive</span>
+          <h1>Claim Your $100 Crumbl Gift Card by Acting Today</h1>
+          <p>
+            Complete our 3-minute taste-maker survey plus a handful of curated
+            partner offers, and we’ll send you a $100 Crumbl eGift card to treat
+            your squad. Only 250 spots available this week.
+          </p>
+          <div class="hero-cta">
+            <a class="cta-button" href="#qualify">
+              Start the Survey
+              <span style="font-size: 1.2rem">→</span>
+            </a>
+            <div class="cta-subtext">
+              ⚡ 74% of spots already claimed · Instant confirmation after you
+              qualify
+            </div>
+            <div class="trust-badges">
+              <span class="trust-badge">Verified Reward Partner</span>
+              <span class="trust-badge">Secure &amp; Encrypted</span>
+              <span class="trust-badge">No credit card required to start</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-highlight">
+          <strong>$100</strong>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <p>
+            Remaining Reward Pool: <strong>65 of 250</strong> gift cards left
+            for verified survey finishers today.
+          </p>
+          <p style="margin: 0">
+            Complete the full experience (survey + qualifying offers) to unlock
+            your eGift instantly.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">How You Lock In Your Gift Card</h2>
+        <p class="section-lede">
+          The entire flow is mobile-friendly and designed to slot into your
+          daily scroll. Stay engaged through each step to secure the reward.
+        </p>
+        <div class="step-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Tell Us About Your Cravings</h3>
+            <p>
+              Answer bite-sized questions about your treat habits so we can
+              curate relevant brand offers and upcoming Crumbl drops.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Complete Partner Offers</h3>
+            <p>
+              Choose and finish the required sponsored offers that unlock the
+              $100 reward. Look for bonus-bonus deals to finish even faster.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Receive Instant Confirmation</h3>
+            <p>
+              Submit proof of completion and we’ll deliver your digital Crumbl
+              gift card straight to your inbox—usually within 24 hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Why TikTok Foodies Love This Drop</h2>
+        <p class="section-lede">
+          We engineered this experience for fast-moving creators, late night
+          sweet tooths, and anyone who never misses a limited-flavor release.
+        </p>
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <div class="benefit-icon">🍪</div>
+            <div>
+              <h3 style="margin: 0 0 6px">Weekly Flavor Insider</h3>
+              <p style="margin: 0">
+                Join our text list to get first dibs on secret drops, taste
+                tests, and creator-only collabs before they go viral.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🎁</div>
+            <div>
+              <h3 style="margin: 0 0 6px">Stackable Rewards</h3>
+              <p style="margin: 0">
+                Unlock additional dessert perks from our partners so every
+                survey answer counts toward free treats.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">⚡</div>
+            <div>
+              <h3 style="margin: 0 0 6px">Lightning Fast Flow</h3>
+              <p style="margin: 0">
+                Built for mobile, with auto-save and smart offer matching so you
+                can complete it between classes or on the go.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🔒</div>
+            <div>
+              <h3 style="margin: 0 0 6px">Privacy-First</h3>
+              <p style="margin: 0">
+                Your data stays encrypted, only shared with opt-in brand
+                partners, and can be removed at any time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="qualify">
+        <div class="qualify-card">
+          <h2 class="section-title" style="margin-bottom: 8px">
+            Ready to Qualify?
+          </h2>
+          <p class="section-lede" style="margin-bottom: 24px">
+            Secure your slot by entering your best contact info. We’ll text you
+            the reminder link and email a confirmation once you’ve finished.
+          </p>
+          <div class="form-card">
+            <h3>Reserve Your Spot</h3>
+            <div class="form-success" id="form-success">
+              You’re locked in! Check your inbox for next steps.
+            </div>
+            <form id="lead-form" novalidate>
+              <div>
+                <label for="fullName">Full name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Avery Parker"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="avery@email.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Mobile number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(555) 123-4567"
+                  pattern="^[0-9()+\\s-]{10,}$"
+                  required
+                />
+              </div>
+              <div>
+                <label for="social">TikTok or Insta handle</label>
+                <input
+                  type="text"
+                  id="social"
+                  name="social"
+                  placeholder="@averycrumbles"
+                  required
+                />
+              </div>
+              <div>
+                <label for="favoriteFlavor">Favorite Crumbl flavor</label>
+                <select id="favoriteFlavor" name="favoriteFlavor" required>
+                  <option value="">Select one…</option>
+                  <option value="chilled-sugar">Chilled Sugar</option>
+                  <option value="milk-chocolate-chip">Milk Chocolate Chip</option>
+                  <option value="pink-sugar">Pink Sugar</option>
+                  <option value="oreo">Cookies &amp; Cream FTW</option>
+                  <option value="mystery">Mystery Flavor Drop</option>
+                </select>
+              </div>
+              <label class="consent">
+                <input type="checkbox" name="consent" required />
+                <span>
+                  I agree to receive texts and emails about this promotion and
+                  confirm I will complete the required partner offers to redeem
+                  the $100 Crumbl gift card.
+                </span>
+              </label>
+              <button type="submit" class="form-button">
+                Reserve My Gift Card
+              </button>
+              <p class="form-note">
+                You can opt out at any time. Message &amp; data rates may apply.
+              </p>
+            </form>
+          </div>
+          <ul>
+            <li>
+              <span>Instant</span> Confirmation email with offer checklist after
+              submitting the form.
+            </li>
+            <li>
+              <span>Complete</span> All required offers within 7 days to remain
+              eligible for the reward.
+            </li>
+            <li>
+              <span>Redeem</span> Receive your $100 Crumbl eGift card via email
+              once verified.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Proof It Works</h2>
+        <p class="section-lede">
+          Real snack lovers, real rewards. Screenshots shared with permission.
+        </p>
+        <div class="social-proof">
+          <div class="testimonial">
+            <div class="badge">TikTok Creator</div>
+            <h4>“$100 covered my finals week sugar cravings.”</h4>
+            <p style="margin: 0; color: var(--gray-600)">
+              “I knocked out the survey between classes, completed two offers
+              that I actually wanted, and the gift card landed the next day. My
+              roomies were obsessed.” — Jayla G., 21
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="badge">Verified Reward</div>
+            <h4>“Legit! Sets you up with other freebies too.”</h4>
+            <p style="margin: 0; color: var(--gray-600)">
+              “I stacked the bonus offers so I have coffee credits plus the
+              Crumbl card. Everything tracked perfectly.” — Marco V., 23
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="badge">#CrumblTok</div>
+            <h4>“My followers loved the unboxing.”</h4>
+            <p style="margin: 0; color: var(--gray-600)">
+              “Shared the journey on TikTok and the comments were all over it. I
+              even got new brand collab invites.” — Sydney R., 19
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">FAQ &amp; Fine Print</h2>
+        <p class="section-lede">
+          We keep it transparent so you know exactly what to expect before you
+          jump in.
+        </p>
+        <div class="faq">
+          <div class="faq-item">
+            <h4>How many offers do I have to complete?</h4>
+            <p style="margin: 0; color: var(--gray-600)">
+              Most users unlock the gift card after finishing the initial survey
+              and 3-4 curated partner offers. Bonus offers can accelerate your
+              verification.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>When will I get my Crumbl gift card?</h4>
+            <p style="margin: 0; color: var(--gray-600)">
+              Once your completions are verified, we email the $100 eGift card—
+              typically within 24 hours, but allow up to 72 hours during peak
+              drops.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Is this available outside the U.S.?</h4>
+            <p style="margin: 0; color: var(--gray-600)">
+              This reward is currently limited to U.S. residents aged 18+ with a
+              valid mobile number. Stay tuned for international offers.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Do I need to pay anything?</h4>
+            <p style="margin: 0; color: var(--gray-600)">
+              There’s no cost to start. Some partner offers may include optional
+              paid trials or purchases that you can choose based on your
+              interests. Always read the offer terms.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#qualify">Apply Now</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+      <p style="margin: 0">
+        © 2024 Crumbl Reward Partners. Not affiliated with Crumbl Cookies, LLC.
+      </p>
+      <p style="margin: 8px 0 0; font-size: 0.75rem; line-height: 1.5">
+        Completion of all required steps, including sponsored partner offers, is
+        mandatory to earn the gift card. Reward quantities are limited and may
+        close once capacity is reached. Please review all terms before
+        participating.
+      </p>
+    </footer>
+
+    <button class="floating-cta hidden" id="floating-cta">
+      Finish Your Survey <span>Only 65 spots left</span>
+    </button>
+
+    <script>
+      const form = document.getElementById("lead-form");
+      const success = document.getElementById("form-success");
+      const floatingCta = document.getElementById("floating-cta");
+      const timerEl = document.getElementById("timer");
+
+      const scrollHandler = () => {
+        const shouldShow =
+          window.scrollY > window.innerHeight * 0.6 &&
+          window.scrollY < document.body.scrollHeight - window.innerHeight * 1.1;
+        floatingCta.classList.toggle("hidden", !shouldShow);
+      };
+
+      const scrollToForm = () => {
+        document.getElementById("qualify").scrollIntoView({ behavior: "smooth" });
+      };
+
+      floatingCta.addEventListener("click", scrollToForm);
+      window.addEventListener("scroll", scrollHandler, { passive: true });
+
+      const startCountdown = (minutes) => {
+        let secondsRemaining = minutes * 60;
+        const interval = setInterval(() => {
+          secondsRemaining -= 1;
+          if (secondsRemaining <= 0) {
+            clearInterval(interval);
+            timerEl.textContent = "00:00";
+            timerEl.parentElement.innerHTML =
+              '<span style="background: rgba(57, 181, 74, 0.15); color: #267834; padding: 6px 12px; border-radius: 10px;">New spots just opened!</span>';
+            return;
+          }
+          const minutesLeft = String(Math.floor(secondsRemaining / 60)).padStart(
+            2,
+            "0"
+          );
+          const secondsLeft = String(secondsRemaining % 60).padStart(2, "0");
+          timerEl.textContent = minutesLeft + ":" + secondsLeft;
+        }, 1000);
+      };
+
+      const showSuccess = () => {
+        success.style.display = "block";
+        success.scrollIntoView({ behavior: "smooth", block: "center" });
+        floatingCta.classList.add("hidden");
+      };
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const entries = Object.fromEntries(data.entries());
+
+        const hasEmpty = Object.entries(entries).some(([key, value]) => {
+          if (key === "consent") {
+            return value !== "on";
+          }
+          return !value?.trim();
+        });
+
+        if (hasEmpty) {
+          alert("Please complete all fields and confirm consent to continue.");
+          return;
+        }
+
+        localStorage.setItem(
+          "crumbRewardLead",
+          JSON.stringify({
+            ...entries,
+            timestamp: new Date().toISOString(),
+          })
+        );
+
+        form.reset();
+        showSuccess();
+      });
+
+      startCountdown(15);
+    </script>
+  </body>
+</html>
+
